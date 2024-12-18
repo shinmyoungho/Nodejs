@@ -39,7 +39,24 @@ on(), emit() 메소드를 사용 가능.
 
 util 모듈 
         -inherits() 상속 쉽게 도와주는 메소드
-        
+
+파일 다루는 모듈
+
+fs모듈
+        -readFileSync(filename,'utf8')
+        -readFile(filename,'utf-8',function)
+        -writeFile(filename,data,utf8,function)
+        -open(filename,flag,function)
+        -write(fd,buf,0,buf.length,null,function)
+        fs.close(fd,function)
+
+        buffer.write() - 버퍼 길이를 반환한다.
+        Buffer.byteLength - 문자열 바이트 길이를 반환.
+
+스트림 단위로 파일 읽고 쓰기
+
+
+
 
 
 
