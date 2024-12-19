@@ -54,6 +54,31 @@ fs모듈
         Buffer.byteLength - 문자열 바이트 길이를 반환.
 
 스트림 단위로 파일 읽고 쓰기
+        var readStream = creatReadStream(filename);
+        var writeStream = createWriteStream(filename);
+        readStream.on('data',callback){
+
+        }
+        readStream('end',callback(){
+                writeStream.end(함수 가능);
+        })
+        fs.unlink(filename,callback(err))파일 삭제
+
+http 모듈
+        -http.createServer((req,res)=>{
+                var instream = fs.createReadStream('./output.txt');
+                instream.pipe(res);
+        })
+        server.listen(7001,'127.0.0.1');
+        // 클라이언트의 요청 인자와 서버에서 만든스트림을 
+         파이프로 연결 가능하다? 라는 의미같음. 
+
+로그 파일 남기기
+
+winston 모듈
+winston-daily-rotate-file
+moment  시간 모듈
+
 
 
 
